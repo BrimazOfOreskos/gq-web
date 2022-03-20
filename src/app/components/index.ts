@@ -1,3 +1,11 @@
+export { ProfileBlockComponent } from './profile-block/profile-block.component';
+export { ProfileBlockModule } from './profile-block/profile-block.module';
+export { ProfileBlockMenuComponent } from './profile-block-menu/profile-block-menu.component';
+export { ProfileBlockMenuModule } from './profile-block-menu/profile-block-menu.module';
+export { ProfileBlockMenuLinkComponent } from './profile-block-menu-link/profile-block-menu-link.component';
+export { ProfileBlockMenuLinkModule } from './profile-block-menu-link/profile-block-menu-link.module';
+export { SearchBarComponent } from './search-bar/search-bar.component';
+export { SearchBarModule } from './search-bar/search-bar.module';
 export { SidebarComponent } from './sidebar/sidebar.component';
 export { SidebarModule } from './sidebar/sidebar.module';
 export { SidebarLinkComponent } from './sidebar-link/sidebar-link.component';

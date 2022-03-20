@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { SidebarModule } from '@components';
-import { ExploreModule, PageNotFoundModule, PolygonManagementModule } from '@views';
+import { SearchBarModule, SidebarModule } from '@components';
+import { ExploreModule, PageNotFoundModule, PolygonManagementModule, ProfileModule, SettingsModule } from '@views';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -14,11 +14,15 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     ExploreModule,
-    SidebarModule,
     PageNotFoundModule,
-    PolygonManagementModule
+    PolygonManagementModule,
+    ProfileModule,
+    SearchBarModule,
+    SettingsModule,
+    SidebarModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: []
 })
 export class AppModule { }
