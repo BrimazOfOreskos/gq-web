@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'space': ['Space Mono', 'Helvetica'],
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),
