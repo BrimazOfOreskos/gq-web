@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { SearchBarModule, SidebarModule } from '@components';
+import { MobileMenuModule, SearchBarModule, SidebarModule } from '@components';
 import { ExploreModule, PageNotFoundModule, PolygonManagementModule, ProfileModule, SettingsModule } from '@views';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     ExploreModule,
+    MobileMenuModule,
     PageNotFoundModule,
     PolygonManagementModule,
     ProfileModule,
