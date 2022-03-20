@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { SidebarModule } from '@components';
+import { ExploreModule, PageNotFoundModule, PolygonManagementModule } from '@views';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -12,7 +13,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SidebarModule
+    ExploreModule,
+    SidebarModule,
+    PageNotFoundModule,
+    PolygonManagementModule
   ],
   providers: [],
   bootstrap: [AppComponent]
