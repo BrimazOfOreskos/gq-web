@@ -7,6 +7,8 @@
       "@components": ["app/components"],
       "@components/*": ["app/components/*"],
       "@env": ["environments/environment"],
+      "@interfaces": ["app/interfaces"],
+      "@interfaces/*": ["app/interfaces/*"],
       "@views": ["app/views"],
       "@views/*": ["app/views/*"]
     },
