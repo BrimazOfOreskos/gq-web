@@ -1,0 +1,8 @@
+<div [ngClass]="(profileBlockMenuState$ | async)?.active ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1 focus:outline-none transition ease-out duration-100 transform" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+  <app-profile-block-menu-link [route]="'profile'">Profile</app-profile-block-menu-link>
+  <app-profile-block-menu-link [route]="'settings'">Settings</app-profile-block-menu-link>
+
+  <hr>
+
+  <a class="block py-2 px-4 text-sm text-gray-700 cursor-pointer" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+</div>
