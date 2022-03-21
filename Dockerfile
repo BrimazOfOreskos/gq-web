@@ -13,6 +13,7 @@ WORKDIR /usr/share/nginx/html
 
 RUN rm -rf ./*
 
+COPY conf/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/dist/galaxy-quest .
 
 EXPOSE 80/tcp
