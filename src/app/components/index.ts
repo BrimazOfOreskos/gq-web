@@ -1,3 +1,5 @@
+export { MapComponent } from './map/map.component';
+export { MapModule } from './map/map.module';
 export { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 export { MobileMenuModule } from './mobile-menu/mobile-menu.module';
 export { MobileMenuCloseButtonComponent } from './mobile-menu-close-button/mobile-menu-close-button.component';
