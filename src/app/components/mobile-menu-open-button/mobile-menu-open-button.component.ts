@@ -12,11 +12,8 @@ import { ApplicationState, MobileMenuState } from '@interfaces';
   styleUrls: ['./mobile-menu-open-button.component.css']
 })
 export class MobileMenuOpenButtonComponent implements OnInit {
-  mobileMenuState$: Observable<MobileMenuState>;
 
-  constructor(private store: Store<ApplicationState>) {
-    this.mobileMenuState$ = this.store.select('mobileMenu');
-  }
+  constructor(private store: Store<ApplicationState>) { }
 
   ngOnInit(): void {
   }
