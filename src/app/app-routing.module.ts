@@ -5,7 +5,8 @@ import { ExploreComponent, PageNotFoundComponent, PolygonManagementComponent, Pr
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/explore' },
-  { path: 'explore', component: ExploreComponent },
+  { path: 'explore', pathMatch: 'full', component: ExploreComponent },
+  { path: 'explore/:zoom/:lat/:lng', component: ExploreComponent },
   { path: 'polygons', component: PolygonManagementComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'settings', component: SettingsComponent },

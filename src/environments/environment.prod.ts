@@ -1,7 +1,10 @@
 export const environment = {
   production: true,
   map: {
-    center: [ 48.3794, 31.1656 ],
+    center: {
+      lat: 48.3794,
+      lng: 31.1656
+    },
     zoom: {
       default: 3,
       max: 18,
