@@ -3,6 +3,7 @@ import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 
 import * as L from 'leaflet';
+import '@geoman-io/leaflet-geoman-free';
 
 import { environment } from '@env';
 import { MapState } from '@interfaces';
@@ -40,6 +41,16 @@ export class MapComponent implements OnInit {
       attributionControl: false,
       center: state.center,
       zoom: state.zoom
+    });
+
+    // TODO: Decide what functionality to expose to users.
+    this.map.pm.addControls({
+      position: 'topleft',
+      drawCircle: false,
+      drawCircleMarker: false,
+      drawPolyline: false,
+      drawMarker: false,
+      rotateMode: false
     });
 
     // TODO: Consider moving this to a service class.
