@@ -6,9 +6,9 @@ export const environment = {
       lng: 31.1656
     },
     zoom: {
-      default: 3,
+      default: 6,
       max: 18,
-      min: 6
+      min: 3
     }
   },
   services: {
