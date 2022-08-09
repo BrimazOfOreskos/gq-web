@@ -38,10 +38,13 @@ export class MapComponent implements OnInit {
 
   private initMap(state: MapState): void {
     this.map = L.map('map', {
-      attributionControl: false,
+      attributionControl: true,
       center: state.center,
       zoom: state.zoom
     });
+
+    this.map.attributionControl.setPrefix("Leaflet");
+    this.map.attributionControl.addAttribution("Map data from © OpenStreetMap");
 
     // TODO: Decide what functionality to expose to users.
     this.map.pm.addControls({
