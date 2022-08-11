@@ -49,10 +49,11 @@ export class MapComponent implements OnInit {
     // TODO: Decide what functionality to expose to users.
     this.map.pm.addControls({
       position: 'topleft',
-      drawCircle: false,
+      // drawCircle: false,
       drawCircleMarker: false,
       drawPolyline: false,
       drawMarker: false,
+      cutPolygon: false,
       rotateMode: false
     });
 
